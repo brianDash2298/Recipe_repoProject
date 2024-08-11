@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-family: "Outfit", sans-serif;
+}
+
+:root{
+    --clr-wrapperClr: hsl(28.89deg 52.94% 90%);
+    --clr-txtColor: hsl(332, 51%, 32%);
+    --clr-txtClr: hsl(14, 45%, 36%);
+    --clr-wrprColor: hsl(330, 100%, 98%);
+    --clr-white: hsl(0deg 0% 100%);
+}
+
+/* .parent{
+    width: 80%;
+    height: 300px;
+    //padding: 50px;
+    //max-width: 85%;
+    margin: 2rem auto 0 auto;
+    background: #00000049;
+}
+
+.child{
+    background-color: #138347a2;
+    height: 250px;
+    width: 50%;
+} */
+
+.pinkWrapper .whiteWrapper h1, h2{
+    font-family: "Young Serif", serif;
+    color: var(--clr-txtClr);
+}
+
+.pinkWrapper{
+    height: auto;
+    background: var(--clr-wrprColor);
+    padding: 4rem;
+}
+
+.pinkWrapper .whiteWrapper{
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: var(--clr-white);
+    padding: 25px;
+    border-radius: 20px;
+}
+
+#omelettePic{
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#omelettePic img{
+    height: auto;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    transition: ease 1s;
+    filter: grayscale(20%);
+}
+
+#omelettePic img:hover{
+    transform: scale(1.1);
+    transition: ease-in-out 0.5s;
+    filter: grayscale(0);
+}
+
+.pinkWrapper .whiteWrapper #bigHeading{
+    font-size: 1.7rem;
+    margin: 20px 0 10px 0;
+    color: black;
+}
+
+.pinkWrapper .whiteWrapper p,
+ul li,
+ol li{
+    font-size: 11px;
+}
+
+.pinkWrapper .whiteWrapper .preparationTime{
+    background: var(--clr-wrprColor);
+    padding: 15px 15px;
+    margin: 15px 0 15px 0;
+    border-radius: 10px;
+}
+
+.pinkWrapper .whiteWrapper .preparationTime h1{
+    color: var(--clr-txtColor);
+    font-family: "Outfit", sans-serif;
+    font-size: 14px;
+}
+
+.pinkWrapper .whiteWrapper .preparationTime ul{
+    padding: 5px 25px;
+}
+
+.pinkWrapper .whiteWrapper .preparationTime ul li{
+    padding: 3px 0;
+}
+
+.pinkWrapper .whiteWrapper .preparationTime ul li::marker{
+    color: var(--clr-txtClr);
+}
+
+.pinkWrapper .whiteWrapper #ingredientsList{ 
+    /* padding-left: 0; */
+    margin: 5px 0 15px 15px;
+}
+
+.pinkWrapper .whiteWrapper .forResponsiveness #ingredientsList li{
+    padding: 0 0 0 10px;
+    margin: 2px 0;
+}
+
+.pinkWrapper .whiteWrapper #ingredientsList li::marker{
+    color: var(--clr-txtClr);
+    font-size: 10px;
+}
+
+.pinkWrapper .whiteWrapper #instrucHdng{
+    margin: 15px 0;
+}
+
+.pinkWrapper .whiteWrapper #instructionList{
+    margin-bottom: 20px;
+    padding: 0 0 0 15px;
+}
+
+.pinkWrapper .whiteWrapper #instructionList li{
+    padding: 0 0 0 10px;
+    margin: 5px 0;
+}
+
+.pinkWrapper .whiteWrapper #instructionList li::marker {
+    color: var(--clr-txtClr);
+    font-weight: 700;
+  }
+
+/* .pinkWrapper .whiteWrapper #instructionList li{
+    counter-increment: myCustomList;
+    padding: 2px;
+}
+
+.pinkWrapper .whiteWrapper #instructionList li::before{
+    content: counter(myCustomList)". ";
+    font-weight: 600;
+    color: var(--clr-txtClr);
+    margin: 0 10px 0 0;
+} */
+
+.pinkWrapper .whiteWrapper #nutriHead{
+    margin: 10px 0;
+}
+
+.pinkWrapper .whiteWrapper #btmParagraph{
+    margin: 10px 0;
+}
+
+.pinkWrapper .whiteWrapper #forNutrition{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.pinkWrapper .whiteWrapper #forNutrition .list_01, .list_02{
+    list-style: none;
+}
+
+.pinkWrapper .whiteWrapper #forNutrition .list_02{
+    color: var(--clr-txtClr);
+    font-weight: 700;
+}
+
+.pinkWrapper .whiteWrapper #forNutrition ul li{
+    font-size: 12px;
+    padding: 5px 0 5px 20px;
+}
+
+
+
+
+@media screen and (max-width: 376px) {
+    .pinkWrapper{
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .pinkWrapper .whiteWrapper{
+        padding: 0;
+        border-radius: 0;
+    }
+
+    .pinkWrapper .whiteWrapper #omelettePic{
+        border-radius: 0;
+    }
+
+    .pinkWrapper .whiteWrapper .forResponsiveness{
+        margin: 0 30px;
+    }
+
+    .pinkWrapper .whiteWrapper .forResponsiveness #bigHeading{
+        font-size: 30px;
+    }
+
+    .pinkWrapper .whiteWrapper .forResponsiveness #forNutrition ul li{
+        font-size: 15px  ;
+    }
+
+    .pinkWrapper .whiteWrapper .forResponsiveness p, 
+    .pinkWrapper .whiteWrapper .forResponsiveness #btmParagraph,
+    .pinkWrapper .whiteWrapper .forResponsiveness .preparationTime ul li,
+    .pinkWrapper .whiteWrapper .forResponsiveness #ingredientsList li,
+    .pinkWrapper .whiteWrapper .forResponsiveness #instructionList li{
+        font-size: 14px;
+    }
+}
